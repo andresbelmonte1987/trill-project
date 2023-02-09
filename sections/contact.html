@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/style.css">
+    <title>Contact</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li>
+                    <a href="../index.html">Home</a>
+                </li>
+                <li>
+                    <a href="./services.html">Services</a>
+                </li>
+                <li>
+                    <a href="./consultancy.html">Consultancy</a>
+                </li>
+                <li>
+                    <a href="./about-us.html">About Us</a>
+                </li>
+                <li>
+                    <a href="./contact.html">Contact</a>
+                </li>
+            </ul>
+        </nav>  
+    </header>
+
+    <main>
+    <h1>Contact us</h1>
+    <form id="fcf-form-id" class="fcf-form-class" method="post" action="contact-form-process.php">
+            <label for="Name" class="fcf-label">Your name</label>
+            <div class="fcf-input-group">
+                <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+            </div>
+            <label for="contact reason">Services</label>
+            <select id="contact reason" name="contact reason">
+                <option value="socialmedia">Social Media</option>
+                <option value="consultancy">Consultancy</option>
+                <option value="website">Website</option>
+                <option value="ads">Ads</option>
+            </select>
+            <div class="fcf-form-group">
+            <label for="Email" class="fcf-label">Your email address</label>
+            <div class="fcf-input-group">
+                <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+            </div>
+            <div class="fcf-form-group">
+            <label for="Message" class="fcf-label">Your message</label>
+            <div class="fcf-input-group">
+                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+            </div>
+        <div class="fcf-form-group">
+            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send</button>
+        </div>
+    </main>
+        <footer>
+            <h4>Social Media</h4>
+            <div class="redes"> 
+                <a href="https://www.instagram.com/trilldigitalmedia/" target="_blank"><img class="icon" src="../img/instagram-icon.png" alt=""></a>
+                <a href="https://www.facebook.com/trilldigitalmedia" target="_blank"><img class="icon" src="../img/facebook-icon.png" alt=""></a>
+                <a href="https://www.linkedin.com/company/trilldigitalmedia/" target="_blank"><img class="icon" src="../img/linkedin-icon.png"> </a>
+            </div>
+    
+            <div>
+                <h5>Tel: (+39) 3484423791</h5>
+                <h5>info@trilldigitalmedia.com</h5>
+                <h5>Team 100% Digital Nomad</h5>
+            </div>
+        </footer>
+
+</html>

@@ -1,0 +1,208 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
+
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+header{
+    padding:20px;
+    color:white;
+    background-color: blueviolet;
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
+    text-align: center;
+    font-size: 30px;
+}
+
+ul li{
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+    color: blueviolet;
+}
+
+ol li{
+    list-style-type:circle;
+    font-size: 20px;
+    text-align: center;
+    color: blueviolet;
+    padding-bottom: 30px;
+}
+
+a{
+    text-decoration: none;
+    padding: 20px;
+    color:white;
+}
+
+nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.principal{
+    display: block;
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+}   
+
+img{
+    width: 100%;
+    height: 100%;
+    align-items: center;
+}   
+
+.padre{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+}
+
+.col{
+    padding: 20px 20px;
+    text-align: center;
+}
+
+body{
+    background-color:white
+}
+
+main{
+    background-color:blueviolet;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    
+}
+
+p{
+    padding:30px;
+    font-family: 'Roboto', sans-serif;
+    font-weight: bolder;
+    font-style: italic;
+    text-align: left;
+    font-size: 30px;
+    line-height: 35px;
+    letter-spacing: 2px;
+    word-spacing: 2px;
+    color:white
+}
+
+.primerParrafo{
+    font-style: italic;
+    text-align:left;
+    font-size: 32px;
+    color:white;
+    text-transform:uppercase;
+}
+
+h1{
+    color:white;
+    font-size: 32px;
+    text-align:center; 
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h2{
+    color: blueviolet;
+    text-align:center; 
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h3{
+    color: blueviolet;
+    text-align:center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 30px; 
+    margin-top: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h4{
+    color: white;
+    text-align:center; 
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+h5{
+    color: white;
+    text-align:center; 
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    padding-top: 2px;
+    padding-bottom: 20px;
+}
+
+footer{
+    padding:10px;
+    background-color: blueviolet;
+    color:aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-style:normal;
+    text-align: center;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+.redes{
+    display:flex;
+    flex-direction:row;
+    justify-content:center;
+}
+
+.icon{
+    width: 80px;
+    height: 80px;
+}
+
+.services{
+    width: 30%;
+    height: 100%;
+    display:inline-grid;
+    grid-template-columns: 300px;
+    grid-template-rows: 100px;
+    justify-content:center;
+    gap: 6px;
+    padding: 20px;
+}
+
+.imgservices{
+    height: 124%;
+    padding-left: 28%;
+    width: 46%;
+}
+
+.consultancy-text{
+    color: white;
+    text-align:center; 
+    font-size: 30px;    
+    font-family: 'Roboto', sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+form{
+    width: 100%;
+    font-size: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin: 8px 0;
+
+    color: white;
+    box-sizing: border-box;
+    text-align: center;
+    width: 100%;
+    padding: 12px 20px;
+}
+
+
