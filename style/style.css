@@ -6,20 +6,36 @@
 }
 
 header{
-    padding:20px;
+    padding:20px 2px 22px 43px;
     color:white;
     background-color: blueviolet;
     font-family: 'Roboto', sans-serif;
-    font-style:normal;
+    font-style: normal;
     text-align: center;
-    font-size: 30px;
 }
 
-ul li{
+.header-trill{
+    padding:17px 2px 20px 11px;
+    color:white;
+    background-color: blueviolet;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    text-align: center;
+}
+
+.nav-linktrill{
+    padding:20px;
+    color:white !important;
+    text-decoration: none;
+}
+
+
+ul li,.ulhome,.ilhome{
     list-style-type: none;
     font-size: 20px;
     text-align: center;
     color: blueviolet;
+    margin-bottom: 0px;
 }
 
 ol li{
@@ -47,13 +63,7 @@ nav ul {
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-}   
-
-img{
-    width: 100%;
-    height: 100%;
-    align-items: center;
-}   
+}    
 
 .padre{
     display: flex;
@@ -206,3 +216,99 @@ form{
 }
 
 
+* .carousel {
+    background-color: #ffffff;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    padding-top: 10px;
+  }
+
+ * .carousel h2 {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding-bottom: 15px;
+  }
+
+ /*Carrousel Bootstrap*/
+img.d-block.w-100 {
+    filter: brightness(0.9);
+  }
+  
+  @media (min-width: 1025px) {
+    .d-sm-block {
+      bottom: 2rem;
+    }
+  }
+  @media (max-width: 769px) {
+    .carousel-indicators {
+      display: none;
+    }
+  
+    .carousel-caption p {
+      display: none;
+    }
+
+
+    .carousel-caption h5 {
+      margin-bottom: 0;
+    }
+  }
+  @media (min-width: 768px) {
+    a.navbar-brand {
+      padding-left: 10px;
+    }
+  }
+  @media (max-width: 575px) {
+    .carousel-caption {
+      bottom: -15px;
+    }
+  
+    .d-sm-block {
+      bottom: 0;
+    }
+  }
+
+ /*Slider clientes*/
+
+  .cont-princ .cont-princ-slider { 
+    width: 97%;
+    height: 200px;
+    background: black;
+    margin: auto;
+    margin-top: 20px;
+    position: relative;
+    overflow: hidden;
+}
+
+.cont-princ-slider .degradado {
+    position: absolute;
+    z-index: 5;
+    left: -1px;
+    height: 105%;
+}
+
+.slider-prin {
+    height: 100%;
+    display: flex;
+    flex-wrap: nowwrap;
+    justify-content: flex-start;
+    position: relative;
+    top: 0;
+    left: 0;
+    animation: slider 20s infinite linear;
+}
+
+.cont-princ-slider .clientes-trill {
+    height: 100%;
+    padding: 10px;
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+@keyframes slider {
+    to {
+         left: -150%;
+    }
+}
