@@ -222,49 +222,51 @@ form{
     height: 100%;
     align-items: center;
     padding-top: 10px;
-  }
+}
 
  * .carousel h2 {
     width: 100%;
     display: block;
     text-align: center;
     padding-bottom: 15px;
-  }
+}
 
- /*Carrousel Bootstrap*/
+/*Carrousel Bootstrap*/
 img.d-block.w-100 {
     filter: brightness(0.9);
-  }
-  
-  @media (min-width: 1025px) {
+}
+
+@media (min-width: 1025px) {
     .d-sm-block {
-      bottom: 2rem;
+    bottom: 2rem;
     }
-  }
-  @media (max-width: 769px) {
+}
+@media (max-width: 769px) {
     .carousel-indicators {
-      display: none;
-    }
-  
-    .carousel-caption p {
-      display: none;
-    }
+    display: none;
+}
+
+.carousel-caption p {
+    display: none;
+}
 
 
-    .carousel-caption h5 {
-      margin-bottom: 0;
+.carousel-caption h5 {
+margin-bottom: 0;
     }
-  }
-  @media (min-width: 768px) {
+}
+
+@media (min-width: 768px) {
     a.navbar-brand {
-      padding-left: 10px;
+    padding-left: 10px;
     }
-  }
-  @media (max-width: 575px) {
-    .carousel-caption {
-      bottom: -15px;
+}
+
+@media (max-width: 575px) {
+.carousel-caption {
+    bottom: -15px;
     }
-  
+
     .d-sm-block {
       bottom: 0;
     }
@@ -308,7 +310,7 @@ img.d-block.w-100 {
 }
 
 @keyframes slider {
-    to {
-         left: -150%;
+to {
+left: -150%;
     }
 }
