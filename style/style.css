@@ -1,55 +1,70 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
 
-*{
-    margin: 0px;
-    padding: 0px;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header{
-    padding:20px 2px 22px 43px;
-    color:white;
+/* Clase para el contenedor principal */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.header-trill,
+.navbar-trill {
+    padding: 20px 2px 22px 43px;
+    color: white;
     background-color: blueviolet;
     font-family: 'Roboto', sans-serif;
     font-style: normal;
     text-align: center;
 }
 
-.header-trill{
-    padding:17px 2px 20px 11px;
-    color:white;
-    background-color: blueviolet;
-    font-family: 'Roboto', sans-serif;
-    font-style: normal;
-    text-align: center;
-}
-
-.nav-linktrill{
-    padding:20px;
-    color:white !important;
+.nav-linktrill {
+    padding: 20px;
+    color: white !important;
     text-decoration: none;
 }
 
+/* Estilo de los enlaces dentro de la barra de navegación */
+.nav-linktrill:hover,
+.nav-linktrill:focus {
+    background-color: blueviolet;
+}
 
-ul li,.ulhome,.ilhome{
-    list-style-type: none;
+.nav-itemtrill {
+    margin: 0 10px;
+}
+
+ul.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+ul li,
+.nav-itemtrill,
+.nav-linktrill {
     font-size: 20px;
     text-align: center;
     color: blueviolet;
-    margin-bottom: 0px;
+    margin-bottom: 0;
 }
 
-ol li{
-    list-style-type:circle;
+ol li {
+    list-style-type: circle;
     font-size: 20px;
     text-align: center;
     color: blueviolet;
     padding-bottom: 30px;
 }
 
-a{
+a {
     text-decoration: none;
     padding: 20px;
-    color:white;
+    color: white;
 }
 
 nav ul {
@@ -58,259 +73,458 @@ nav ul {
     justify-content: space-between;
 }
 
-.principal{
+@media (max-width: 767px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 0;
+    }
+
+    .nav-itemtrill {
+        margin: 10px 0;
+    }
+
+    .ulhome {
+        background-color: blueviolet;
+        position: absolute;
+        top: 80px;
+        width: 100%;
+        left: 0;
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        text-align: center;
+        display: none;
+        z-index: 1;
+    }
+
+    .ulhome .ilhome {
+        margin-top: 10px;
+    }
+
+    .ulhome .ilhome a {
+        display: block;
+        font-size: 20px;
+        color: #FFFFFF;
+        padding: 10px;
+    }
+}
+
+.d-block.d-sm-none {
+      display: block !important;
+    }
+  
+ /* Estilos para pantallas grandes */
+
+.principal {
     display: block;
     width: 50%;
     margin-left: auto;
     margin-right: auto;
-}    
-
-.padre{
+    max-width: 800px;
+  }
+  
+  .padre {
     display: flex;
     flex-direction: row;
     align-items: center;
     text-align: center;
-}
-
-.col{
-    padding: 20px 20px;
+    flex-wrap: wrap;
+  }
+  
+  .col {
+    padding: 1rem;
     text-align: center;
-}
-
-body{
-    background-color:white
-}
-
-main{
-    background-color:blueviolet;
+    flex-basis: 50%;
+  }
+  
+  /* Estilos para pantallas más pequeñas */
+  
+  @media screen and (max-width: 768px) {
+    .principal {
+      width: 90%;
+    }
+    
+    .padre {
+      flex-direction: column;
+    }
+    
+    .col {
+      flex-basis: 100%;
+    }
+    
+    h1, h2, h3 {
+      font-size: 24px;
+    }
+    
+    p {
+      font-size: 18px;
+      padding: 10px;
+    }
+  }
+  
+  /* Estilos generales */
+  
+  body {
+    background-color: white;
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+  }
+  
+  main {
+    background-color: blueviolet;
     margin-top: 20px;
     margin-bottom: 20px;
-    
-}
-
-p{
-    padding:30px;
-    font-family: 'Roboto', sans-serif;
+    padding: 20px;
+  }
+  
+  p {
+    padding: 1rem;
     font-weight: bolder;
     font-style: italic;
     text-align: left;
-    font-size: 30px;
-    line-height: 35px;
+    font-size: 1.2rem;
+    line-height: 1.5;
     letter-spacing: 2px;
     word-spacing: 2px;
-    color:white
-}
-
-.primerParrafo{
+    color: white;
+  }
+  
+  .primerParrafo {
     font-style: italic;
-    text-align:left;
-    font-size: 32px;
-    color:white;
-    text-transform:uppercase;
-}
-
-h1{
-    color:white;
-    font-size: 32px;
-    text-align:center; 
-    font-family: 'Roboto', sans-serif;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-h2{
-    color: blueviolet;
-    text-align:center; 
-    font-family: 'Roboto', sans-serif;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-h3{
-    color: blueviolet;
-    text-align:center;
-    font-family: 'Roboto', sans-serif;
-    font-size: 30px; 
-    margin-top: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-h4{
+    text-align: left;
+    font-size: 2rem;
+    text-transform: uppercase;
     color: white;
-    text-align:center; 
-    font-family: 'Roboto', sans-serif;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
+  }
 
-h5{
+    /* Estilos para títulos */
+
+  h1 {
     color: white;
-    text-align:center; 
-    font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    padding-top: 2px;
-    padding-bottom: 20px;
-}
-
-footer{
-    padding:10px;
-    background-color: blueviolet;
-    color:aliceblue;
-    font-family: 'Roboto', sans-serif;
-    font-style:normal;
+    font-size: 3rem;
     text-align: center;
-    font-size: 30px;
-    line-height: 35px;
-}
-
-.redes{
-    display:flex;
-    flex-direction:row;
-    justify-content:center;
-}
-
-.icon{
-    width: 80px;
-    height: 80px;
-}
-
-.services{
-    width: 30%;
-    height: 100%;
-    display:inline-grid;
-    grid-template-columns: 300px;
-    grid-template-rows: 100px;
-    justify-content:center;
-    gap: 6px;
-    padding: 20px;
-}
-
-.imgservices{
-    height: 124%;
-    padding-left: 28%;
-    width: 46%;
-}
-
-.consultancy-text{
-    color: white;
-    text-align:center; 
-    font-size: 30px;    
     font-family: 'Roboto', sans-serif;
-    padding-top: 20px;
-    padding-bottom: 20px;
-}
-
-form{
+    padding: 1rem;
+  }
+  
+  h2 {
+    color: blueviolet;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    padding: 1rem;
+  }
+  
+h3 {
+    color: blueviolet;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 2rem;
+    margin-top: 2rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    }
+    
+    h4 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    }
+    
+    h5 {
+    color: white;
+    text-align: center;
+    font-family: 'Roboto', sans-serif;
+    font-size: 1.2rem;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+    }
+    
+    /* Estilos para el pie de página */
+    footer {
+    padding: 1rem;
+    background-color: blueviolet;
+    color: aliceblue;
+    font-family: 'Roboto', sans-serif;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5rem;
+    line-height: 1.5;
+    }
+    
+    /* Estilos para redes sociales */
+    .redes {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    }
+    
+    .icon {
+    width: 5rem;
+    height: 5rem;
+    }
+    
+    /* Estilos para servicios */
+    .services {
     width: 100%;
-    font-size: 20px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    margin: 8px 0;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 2rem;
+    }
+    
+    .imgservices {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    }
 
+    .sectionservices {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      
+      table {
+        width: 100%;
+        max-width: 800px;
+        margin: 0 auto;
+      }
+      
+      td {
+        padding: 20px;
+        text-align: center;
+      }
+      
+      @media screen and (max-width: 767px) {
+        table {
+          display: block;
+        }
+        td {
+          display: block;
+          padding: 10px;
+        }
+      }
+      
+    
+    .consultancy-text {
+    color: white;
+    text-align: center;
+    font-size: 2rem;
+    font-family: 'Roboto', sans-serif;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    }
+    
+    /* Estilos para formularios */
+    form {
+    font-size: 1.2rem;
+    margin: 1rem 0;
     color: white;
     box-sizing: border-box;
     text-align: center;
     width: 100%;
-    padding: 12px 20px;
-}
-
-
-* .carousel {
+    padding: 1rem;
+    }
+    
+    /* Estilos para el carrusel */
+    .carousel {
     background-color: #ffffff;
     width: 100%;
     height: 100%;
     align-items: center;
-    padding-top: 10px;
-}
-
- * .carousel h2 {
-    width: 100%;
+    padding-top: 1rem;
+    }
+    
+    .carousel h2 {
     display: block;
     text-align: center;
-    padding-bottom: 15px;
-}
-
+    padding-bottom: 1.5rem;
+    font-size: 2rem;
+    }
+    
+    
 /*Carrousel Bootstrap*/
+
 img.d-block.w-100 {
     filter: brightness(0.9);
-}
-
-@media (min-width: 1025px) {
+    max-width: 100%;
+  }
+  
+  @media (min-width: 1025px) {
     .d-sm-block {
-    bottom: 2rem;
+      bottom: 2rem;
     }
-}
-@media (max-width: 769px) {
+  }
+  
+  @media (max-width: 769px) {
     .carousel-indicators {
-    display: none;
-}
-
-.carousel-caption p {
-    display: none;
-}
-
-
-.carousel-caption h5 {
-margin-bottom: 0;
+      display: none;
     }
-}
-
-@media (min-width: 768px) {
+  
+    .carousel-caption p {
+      display: none;
+    }
+  
+    .carousel-caption h5 {
+      margin-bottom: 0;
+      text-align: center;
+    }
+  }
+  
+  @media (min-width: 768px) {
     a.navbar-brand {
-    padding-left: 10px;
+      padding-left: 10px;
     }
-}
-
-@media (max-width: 575px) {
-.carousel-caption {
-    bottom: -15px;
+  }
+  
+  @media (max-width: 575px) {
+    .carousel-caption {
+      bottom: -15px;
     }
-
+  
     .d-sm-block {
       bottom: 0;
     }
   }
-
+  
+  .carousel-inner {
+    height: 70vh;
+  }
+  
  /*Slider clientes*/
 
-  .cont-princ .cont-princ-slider { 
+.cont-princ-slider {
     width: 97%;
-    height: 200px;
-    background: black;
+    height: 150px;
+    background: white;
     margin: auto;
-    margin-top: 20px;
+    margin-top: 30px;
     position: relative;
     overflow: hidden;
-}
-
-.cont-princ-slider .degradado {
-    position: absolute;
-    z-index: 5;
-    left: -1px;
-    height: 105%;
-}
-
-.slider-prin {
+  }
+  
+  .slider-prin {
     height: 100%;
     display: flex;
-    flex-wrap: nowwrap;
-    justify-content: flex-start;
     position: relative;
-    top: 0;
     left: 0;
     animation: slider 20s infinite linear;
-}
-
-.cont-princ-slider .clientes-trill {
-    height: 100%;
-    padding: 10px;
-    margin-left: 2px;
-    margin-right: 2px;
-}
-
-@keyframes slider {
-to {
-left: -150%;
+  }
+  
+  .clientes-trill {
+    margin-right: -4px;
+    flex-shrink: 0;
+  }
+  
+  .logo-clientes-trill {
+    height: 100px;
+    width: 250px;
+  }
+  
+  @keyframes slider {
+    0% {
+      left: 0;
     }
-}
+    100% {
+      left: -800px;
+    }
+  }
+  
+  .maintrill {
+    max-width: 800px;
+    margin: 0 auto; 
+  }
+  
+  .fcf-label {
+    display: block;
+    margin-bottom: 10px;
+  }
+  
+  .fcf-input-group {
+    margin-bottom: 20px;
+  }
+  
+  .fcf-form-control {
+    width: 100%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+  }
+  
+  select.fcf-form-control {
+    width: 100%;
+  }
+  
+  .fcf-form-group {
+    margin-bottom: 30px;
+  }
+  
+  .fcf-btn {
+    display: block;
+    margin-top: 20px;
+    padding: 10px; 
+    border-radius: 5px;
+    border: none;
+    background-color: white;
+    color: blueviolet;
+    cursor: pointer;
+  }
+  
+  /* Media queries */
+  
+  /* For screens with max width of 767px */
+  @media (max-width: 767px) {
+    .cont-princ-slider {
+      height: 100px;
+      margin-top: 20px;
+    }
+    
+    .logo-clientes-trill {
+      height: 80px;
+      width: 200px;
+    }
+  }
+  
+  /* For screens with min width of 768px and max width of 991px */
+  @media (min-width: 768px) and (max-width: 991px) {
+    .cont-princ-slider {
+      height: 120px;
+      margin-top: 25px;
+    }
+    
+    .logo-clientes-trill {
+      height: 90px;
+      width: 225px;
+    }
+  }
+  
+  /* For screens with min width of 992px */
+  @media (min-width: 992px) {
+    .cont-princ-slider {
+      height: 150px;
+    }
+    
+    .logo-clientes-trill {
+      height: 100px;
+      width: 250px;
+    }
+  }
+  
+  /* For screens with max width of 575px */
+  @media (max-width: 575px) {
+    .fcf-form-control {
+      font-size: 14px;
+    }
+    
+    .fcf-btn {
+      font-size: 14px;
+    }
+  }
+  
+  
