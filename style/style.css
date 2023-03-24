@@ -23,9 +23,40 @@
 }
 
 .nav-linktrill {
-    padding: 20px;
-    color: white !important;
-    text-decoration: none;
+  padding: 20px;
+  color: white !important;
+  text-decoration: none;
+}
+
+.navbar-trill {
+  display: flex;
+  align-items: center;
+  max-width: 400px; 
+}
+
+@media only screen and (max-width: 768px) {
+.nav-linktrill {
+  padding: 10px;
+}
+
+.navbar-trill {
+  max-width: 100%;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+}
+
+.navbar-trill img {
+  max-width: 50%;
+  height: auto;
+  margin-right: 0px;
+}
+@media only screen and (max-width: 768px) {
+  .navbar-trill img {
+      margin-right: 10px;
+      margin-left: auto;
+      max-width: 50%;
+  }
 }
 
 /* Estilo de los enlaces dentro de la barra de navegación */

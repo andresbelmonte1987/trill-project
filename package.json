@@ -1,0 +1,19 @@
+{
+  "name": "trill-digital-media",
+  "version": "1.0.0",
+  "description": "Proyecto de una página web para una agencia de marketing digital",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "express": "^4.17.1",
+    "mongoose": "^5.12.0"
+  },
+  "devDependencies": {
+    "mocha": "^9.1.1"
+  },
+  "author": "Andres Belmonte",
+  "license": "MIT"
+}

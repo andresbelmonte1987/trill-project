@@ -1,5 +1,5 @@
-@import '_variables.scss';
-@import '_mixins.scss';
+@import 'variables.scss';
+@import 'mixins.scss';
 
 .header-trill {
   padding: 20px 2px 22px 43px;
@@ -10,7 +10,7 @@
   text-align: center;
 
   .navbar-trill {
-    @include flex-center;
+    @include navbar-trill();
 
     ul.navbar {
       display: flex;

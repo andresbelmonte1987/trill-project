@@ -1,11 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap');
-
-/* Importar otros archivos SCSS */
-@import "_variables.scss";
-@import "_mixins.scss";
-@import "_header.scss";
-@import "_main-section.scss";
-@import "_footer.scss";
+@import 'variables.scss';
 
 * {
   margin: 0;
@@ -20,6 +13,8 @@
 
 @media (max-width: 767px) {
   .d-block {
+    display: none;
+
     @include smallScreen() {
       display: block !important;
     }
@@ -32,4 +27,3 @@ body {
   font-family: 'Roboto', sans-serif;
   margin: 0;
 }
-

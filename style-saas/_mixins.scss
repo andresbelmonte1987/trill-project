@@ -1,0 +1,44 @@
+@mixin flex-center($justify: center, $align: center) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+}
+
+@mixin link-styling($color: $color-secondary, $background: $color-primary, $font-size: 16px) {
+  color: $color;
+  text-decoration: none;
+  padding: 20px;
+  font-size: $font-size;
+
+  &:hover, &:focus {
+    background-color: $background;
+  }
+}
+
+@mixin navbar-trill($max-width: 400px, $padding: 20px, $align: center) {
+  display: flex;
+  align-items: $align;
+  max-width: $max-width;
+
+  @media only screen and (max-width: 768px) {
+    .nav-linktrill {
+      padding: 10px;
+    }
+
+    max-width: 100%;
+    justify-content: space-between;
+    padding: 0 $padding;
+  }
+
+  img {
+    max-width: 50%;
+    height: auto;
+    margin-right: 0px;
+
+    @media only screen and (max-width: 768px) {
+      margin-right: 10px;
+      margin-left: auto;
+      max-width: 50%;
+    }
+  }
+}
